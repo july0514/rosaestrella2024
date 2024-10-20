@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Deportivos - Velocidad y Estilo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style> 
+        /* Estilos globales */
+body {
+    font-family: 'Helvetica Neue', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #770e1e, #FF416C);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #06357a, #1566b6);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    background: linear-gradient(135deg, #111, #333);
+}
+
+.hero h2 {
+    font-size: 3.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.btn-explore {
+    background: #770e1e;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-explore:hover {
+    transform: scale(1.1);
+}
+
+/* Sección sobre nosotros */
+.about-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: slideIn 2s ease-in-out;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: #d33c5f;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Galería */
+.gallery-section {
+    padding: 50px;
+    background: linear-gradient(135deg, #a7152b, #991937);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.gallery-item img, .gallery-item video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Sección de comentarios */
+.comments-section {
+    padding: 50px;
+    background-color: #333;
+}
+
+.comments-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.comments-section input, .comments-section textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.comments-section button {
+    background-color: #FF4B2B;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border
+}
+    </style>
+</head>
+<body>
+    <!-- Encabezado innovador -->
+    <header>
+        <div class="header-container">
+            <h1 class="title">Autos Deportivos</h1>
+            <p class="subtitle">La Fusión Perfecta de Potencia y Diseño</p>
+        </div>
+    </header>
+
+    <!-- Sección principal -->
+    <section id="home" class="main-section">
+        <div class="hero">
+            <h2>Descubre la Pasión por la Velocidad</h2>
+            <p>Explora los autos deportivos más emblemáticos que redefinen el límite de lo posible.</p>
+            <a href="#gallery" class="btn-explore">Explora nuestra Colección</a>
+        </div>
+    </section>
+
+    <!-- Sección de sobre nosotros con diseño asimétrico -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos un grupo de entusiastas de los autos deportivos, dedicados a brindar la mejor información, imágenes y videos sobre los vehículos más rápidos y elegantes del mundo.</p>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Innovación en Diseño</h3>
+                <p>Los autos más avanzados y con diseños espectaculares.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Velocidad Incomparable</h3>
+                <p>La adrenalina de alcanzar altas velocidades con seguridad.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Rendimiento Futurista</h3>
+                <p>Motores que desafían las expectativas y brindan potencia extrema.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería multimedia -->
+    <section id="gallery" class="gallery-section">
+        <h2>Galería de Autos Deportivos</h2>
+        <p>Disfruta de nuestra colección de autos deportivos en acción.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/few_off/sian-fkp-37/2023/over_d.jpg" alt="Lamborghini Aventador">
+                <p>Lamborghini Aventador en acción.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.topgear.es/sites/navi.axelspringer.es/public/media/image/2022/09/ferrari-sf90-zacoe-2819053.jpg?tf=3840x" alt="Ferrari SF90">
+                <p>Ferrari SF90 Stradale alcanzando su máxima velocidad.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="carr2.jpg" alt="McLaren P1">
+                <p>McLaren P1 redefiniendo el lujo y la velocidad.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1080x624/dam/pnr/2022/Motorsports/911-GT3-R-world-premiere/M22_3550_fine.jpeg/jcr:content/M22_3550_fine.jpeg" alt="Porsche 911 carrera">
+                <p>Porsche 911 carrera Un clásico que nunca pasa de moda, con un rendimiento excepcional y un diseño icónico.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/2023/09_18_refresh/s/gw_hura_s_02_m.jpg" alt="Lamborghini Huracan">
+                    <p>Lamborghini Huracán: Con su impresionante diseño y potencia, sigue siendo una de las máquinas más emocionantes del mercado</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://fotos.perfil.com/2019/06/28/trim/876/492/el-nuevo-ford-mustang-shelby-gt500-ofrecera-760-caballos-de-potencia-747118.jpg" alt="Ford Mustang">
+                <P>Ford Mustang: Con su estilo americano y una gran cantidad de potencia, sigue siendo una opción popular entre los entusiastas de los deportivos.</P>
+            </div>
+            <div class="gallery-item">
+                <img src="https://elcomercio.pe/resizer/KKwRz8cFB2JrU0Iy6i-azaBGxB8=/980x528/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/MYTUMQKAIFB3BOAXCFB5GFV7UQ.jpg" alt="Chevrolet Corvette C8">
+                <p>Chevrolet Corvette C8: Este modelo ha ganado mucha popularidad por su diseño innovador y su impresionante motor V8</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.bmw.com.mx/content/dam/bmw/common/all-models/m-series/m4-coupe/2020/highlights/bmw-4-series-coupe-m-automobiles-gallery-impressions-m4-competition-02-mobile.jpg" alt="BMW M4">
+                <P>BMW M4: Con su elegancia y potencia, es una opción ideal para quienes buscan un deportivo de lujo y rendimiento.</P>
+            </div>
+            <div class="gallery-item">
+                <img src="https://media-assets.mazda.eu/image/upload/q_auto,f_auto/mazdaes/globalassets/cars/2024-mx-5-st/assets/showroom/mx-5_drivingexperience_value_02_lhd_1368x770.jpg?rnd=4af28b" alt="Mazda MX-5 Miata">
+                <p>Mazda MX-5 Miata Un roadster ligero y divertido, ideal para quienes buscan una experiencia de conducción pura</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.drivek.com/configurator-imgs/cars/es/800/MERCEDES/AMG-GT/44106_COUPE-3-DOORS/mercedes-benz-amg-gt-front-view.jpg" alt="Mercedes-AMG GT">
+                <p>Mercedes-AMG GT Con su elegante diseño y potencia impresionante, es una opción de lujo y rendimiento.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.latercera.com/resizer/SX6YOzvxX-Mke2SWadQNiMpawao=/arc-anglerfish-arc2-prod-copesa/public/YJWL6QEOLVG2NF4RL7LZSNEYPM.jpeg" alt="Nissan GT-R">
+                <p>Nissan GT-R: Conocido por su potencia y agilidad, sigue siendo una elección popular entre los amantes de los autos deportivos</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.remediosdigitales.com/b1c151/acura-nsx-2019_30/1366_2000.jpg" alt="Acura NSX">
+                <p>Acura NSX Un superdeportivo con motor híbrido que ofrece una experiencia de conducción increíble.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de comentarios interactiva -->
+    <section id="comments" class="comments-section">
+        <h2>¡Comparte tu Opinión!</h2>
+        <p>Cuéntanos cuál es tu auto deportivo favorito y por qué.</p>
+        <form id="comment-form">
+            <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+            <textarea id="comment" name="comment" rows="4" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+        <div id="comments-list">
+            <h3>Comentarios Recientes:</h3>
+            <ul>
+                <!-- Comentarios generados por usuarios aparecerán aquí -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact" class="contact-section">
+        <h2>Contacto</h2>
+        <p>Si deseas obtener más información o colaborar con nosotros, contáctanos a través de:</p>
+        <ul>
+            <li>Email: info@autosdeportivos.com</li>
+            <li>Teléfono: 123-456-7890</li>
+        </ul>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Autos Deportivos. Innovación, velocidad y estilo en cada curva.</p>
+    </footer>
+
+    <!-- Script para manejar los comentarios -->
+    <script>
+        const commentForm = document.getElementById('comment-form');
+        const commentsList = document.getElementById('comments-list ul');
+
+        commentForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const comment = document.getElementById('comment').value;
+
+            const commentItem = document.createElement('li');
+            commentItem.textContent = `${name}: ${comment}`;
+            commentsList.appendChild(commentItem);
+
+            commentForm.reset();
+        });
+    </script>
+</body>
+</html>
